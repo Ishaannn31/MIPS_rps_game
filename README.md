@@ -46,7 +46,7 @@ The configuration for the automaton and game is stored in memory and includes:
 
 Example Configuration
 
-assembly
+```assembly
 
 .data
 configuration:
@@ -56,7 +56,7 @@ configuration:
   .byte 122     # rule
   .byte 5       # skip
   .byte 7       # column
-
+```
 How to Run
 
 To run this project, you will need the MARS MIPS simulator. Follow these steps:
