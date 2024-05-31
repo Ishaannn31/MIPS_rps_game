@@ -8,28 +8,30 @@ Project Structure
 The project is divided into several MIPS assembly files, each handling different aspects of the game's functionality:
 Files
 
-    •automaton.s:
-        Implements the cellular automaton used to generate randomness.
-        Functions:
-            simulate_automaton: Simulates one step of the cellular automaton.
+ ### Files
 
-    •main.s:
-        Contains the main program logic to run the game.
-        Functions:
-            main: Initializes and runs the game for a specified number of rounds.
-            simulate_loop: Loops through each round of the game.
+- **`src/automaton.s`**
+  - Implements the cellular automaton used to generate randomness.
+  - Functions:
+    - `simulate_automaton`: Simulates one step of the cellular automaton.
 
-    •random.s:
-        Handles random number generation.
-        Functions:
-            gen_byte: Generates a random byte.
-            gen_bit: Generates a random bit.
+- **`src/main.s`**
+  - Contains the main program logic to run the game.
+  - Functions:
+    - `main`: Initializes and runs the game for a specified number of rounds.
+    - `simulate_loop`: Loops through each round of the game.
 
-    •rps.s:
-        Implements the logic for playing a single round of Rock Paper Scissors.
-        Functions:
-            play_game_once: Computes moves for both players and prints the result (Win, Lose, Tie).
+- **`src/random.s`**
+  - Handles random number generation.
+  - Functions:
+    - `gen_byte`: Generates a random byte.
+    - `gen_bit`: Generates a random bit.
 
+- **`src/rps.s`**
+  - Implements the logic for playing a single round of Rock Paper Scissors.
+  - Functions:
+    - `play_game_once`: Computes moves for both players and prints the result (Win, Lose, Tie).
+    
 Cellular Automaton
 
 The cellular automaton (CA) is used to generate randomness in the game. It updates the tape based on a specified rule and can be configured with different parameters for varied behavior.
