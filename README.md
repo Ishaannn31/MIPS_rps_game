@@ -69,7 +69,7 @@ To run this project, you will need the MARS MIPS simulator. Follow these steps:
 Function Descriptions:
 
 •simulate_automaton:
- Simulates one step of the cellular automaton. This function updates the tape based on the provided rule and configuration.
+ ```Simulates one step of the cellular automaton. This function updates the tape based on the provided rule and configuration.```
 
 •print_tape:
  Prints the current state of the tape for visualization.
